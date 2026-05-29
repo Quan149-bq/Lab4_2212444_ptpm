@@ -94,7 +94,7 @@ export function PostForm({ post }: PostFormProps) {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           required
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-400 focus:border-yellow-400"
           placeholder="Nhập tiêu đề bài viết"
         />
       </div>
@@ -111,7 +111,7 @@ export function PostForm({ post }: PostFormProps) {
           type="text"
           value={excerpt}
           onChange={(e) => setExcerpt(e.target.value)}
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-400 focus:border-yellow-400"
           placeholder="Mô tả ngắn về bài viết"
         />
       </div>
@@ -129,7 +129,7 @@ export function PostForm({ post }: PostFormProps) {
           value={content}
           onChange={(e) => setContent(e.target.value)}
           rows={15}
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 font-mono"
+          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-400 focus:border-yellow-400 font-mono"
           placeholder="Viết nội dung hoặc upload ảnh để chèn vào bài..."
         />
         <p className="mt-1 text-xs text-gray-500 italic">
@@ -149,7 +149,7 @@ export function PostForm({ post }: PostFormProps) {
           id="status"
           value={status}
           onChange={(e) => setStatus(e.target.value as PostStatus)}
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-400 focus:border-yellow-400"
         >
           <option value="draft">Bản nháp</option>
           <option value="published">Xuất bản</option>
@@ -167,7 +167,7 @@ export function PostForm({ post }: PostFormProps) {
         <button
           type="submit"
           disabled={loading}
-          className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="px-4 py-2 bg-yellow-400 text-gray-900 rounded-md hover:bg-yellow-500 disabled:opacity-50 disabled:cursor-not-allowed font-semibold"
         >
           {loading ? "Đang lưu..." : isEditing ? "Cập nhật" : "Tạo bài viết"}
         </button>

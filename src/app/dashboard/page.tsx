@@ -27,8 +27,8 @@ export default async function DashboardPage() {
         <h1 className="text-3xl font-bold">Bài viết của tôi</h1>
         <Link
           href="/dashboard/new"
-          className="bg-blue-600 text-white px-4 py-2 rounded-md
-hover:bg-blue-700"
+          className="bg-yellow-400 text-gray-900 px-4 py-2 rounded-md
+hover:bg-yellow-500 font-semibold"
         >
           + Viết bài mới
         </Link>

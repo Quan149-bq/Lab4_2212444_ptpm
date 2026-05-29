@@ -62,7 +62,7 @@ export function LoginForm() {
           className="w-full flex items-center justify-center gap-2 py-2
 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium
 text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2
-focus:ring-offset-2 focus:ring-blue-500"
+focus:ring-offset-2 focus:ring-yellow-400"
         >
           <svg
             className="w-5 h-5"
@@ -113,8 +113,8 @@ text-gray-700"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="mt-1 block w-full px-3 py-2 border border-gray300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500
-focus:border-blue-500"
+            className="mt-1 block w-full px-3 py-2 border border-gray300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-400
+focus:border-yellow-400"
             placeholder="email@example.com"
           />
         </div>
@@ -132,29 +132,32 @@ text-gray-700"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            className="mt-1 block w-full px-3 py-2 border border-gray300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500
-focus:border-blue-500"
+            className="mt-1 block w-full px-3 py-2 border border-gray300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-400
+focus:border-yellow-400"
             placeholder="••••••••"
           />
         </div>
         <button
           type="submit"
           disabled={loading}
-          className="w-full flex justify-center py-2 px-4 border bordertransparent rounded-md shadow-sm text-sm font-medium text-white bg-blue600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full flex justify-center py-2 px-4 border bordertransparent rounded-md shadow-sm text-sm font-medium text-gray-900 bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset2 focus:ring-yellow-400 disabled:opacity-50 disabled:cursor-not-allowed font-semibold"
         >
           {loading ? "Đang xử lý..." : "Đăng nhập"}
         </button>
       </form>
       <p className="text-center text-sm text-gray-600">
         Chưa có tài khoản?{" "}
-        <Link href="/register" className="text-blue-600 hover:text-blue500">
+        <Link
+          href="/register"
+          className="text-yellow-600 hover:text-yellow-700 font-medium"
+        >
           Đăng ký ngay
         </Link>
       </p>
       <div className="flex items-center justify-between mt-2">
         <Link
           href="/forgot-password"
-          className="text-sm text-blue-600 hover:text-blue-500"
+          className="text-sm text-yellow-600 hover:text-yellow-700 font-medium"
         >
           Quên mật khẩu?
         </Link>
